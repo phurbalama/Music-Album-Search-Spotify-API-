@@ -8,7 +8,7 @@ const stream = fs.createReadStream(__dirname + '/html/search-form.html');
 const imageStream = fs.createReadStream(__dirname + '/album-art/5c3cf2ee3494e2da71dcf26303202ec491b26213.jpg')
 
 
-
+//creating a server that has request and response parameter
 const server = http.createServer((req,res)=>{
     res.writeHead(200, {'Content-Type': 'text/html'});
     const urlObject = url.parse(req.url,true).query;
